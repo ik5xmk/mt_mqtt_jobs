@@ -3,7 +3,7 @@ The MQTT server must be running (see various guides online for installing it on 
 
 The mqtt2sqlite_msg program acts as a client and intercepts messages in transit. It must always be active in the background.<br><br>
 
-The db2html_msg program can be run as a cron job. Its function is to extract a certain number of messages from the database and display them in a specially created HTML page.<br>
-In the configuration code, you must specify the database path and where the page should be created (usually a path within the existing web server).<br>
-You can also specify which channels to display, thus offering the possibility of having different pages for each meshtastic channel (the messages in the database are from all the channels configured on the lora cards).<br> The code and HTML page are very simple, making it easy to customize.<br>
+The db2html_msg program can be run as a cron job. Its function is to extract a certain number of messages from the database and display them in a specially created HTML page.
+In the configuration code, you must specify the database path and where the page should be created (usually a path within the existing web server).
+You can also specify which channels to display, thus offering the possibility of having different pages for each meshtastic channel (the messages in the database are from all the channels configured on the lora cards). The code and HTML page are very simple, making it easy to customize.
 These Python programs require libraries that must be installed manually.
