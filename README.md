@@ -8,3 +8,5 @@ In the configuration code, you must specify the database path and where the page
 You can also specify which channels to display, thus offering the possibility of having different pages for each meshtastic channel (the messages in the database are from all the channels configured on the lora cards). The code and HTML page are very simple, making it easy to customize.
 These Python programs require libraries that must be installed manually.<br><br>
 ![](https://github.com/ik5xmk/mt_mqtt_jobs/blob/main/html_messages_dashboard.jpg)<br>
+<br>
+... to be continued....
