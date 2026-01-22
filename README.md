@@ -9,4 +9,6 @@ You can also specify which channels to display, thus offering the possibility of
 These Python programs require libraries that must be installed manually.<br><br>
 ![](https://github.com/ik5xmk/mt_mqtt_jobs/blob/main/html_messages_dashboard.jpg)<br>
 <br>
-... to be continued....
+mqtt2sqlite_map connects to the MQTT server and acquires information about the nodes in transit, including their location and telemetry. A specific database is created for this information. This program must also always run in the background. Configuration requires the code to include the MQTT server login parameters, the maximum number of nodes to manage, and the time taken to determine whether a node is still operational.<br><br>
+![](https://github.com/ik5xmk/mt_mqtt_jobs/blob/main/map.jpg)<br>
+The db2map program must be run via cron (or manually). Its function is to read the database populated by the previous program and display on a map the nodes that have passed (as information) through the MQTT server. Its configuration, always within the code, includes the path and name of the HTML page that will contain the map (an operational web server is required), the coordinates needed to set the center of our map, the zoom, and the radius (in km) that will encompass the nodes to be displayed. An additional parameter sets the presence (last information received) of the nodes on the map. The display (green marker) will contain the last telemetry received and recorded in the database or (blue marker) only the node's position, in the absence of other values.
