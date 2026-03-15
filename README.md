@@ -24,7 +24,7 @@ The last program to be managed is <strong>message2mqtt.py</strong>. This softwar
 This program is called from the web app with two distinct arguments: "-i" sends the node info frame to MQTT. "message text" sends the content. The syntax is clearly visible within the PHP code.<br><br>
 ![](https://github.com/ik5xmk/mt_mqtt_jobs/blob/main/meshapp/virtual_node.jpg)<br><br>
 ![](https://github.com/ik5xmk/mt_mqtt_jobs/blob/main/meshapp/message_example.jpg)<br><br>
-In the folder, we also find the daemon service and how to manage the log rotate. I intentionally didn't provide a step-by-step guide; I believe installing and configuring these systems requires a certain level of familiarity with the environment to operate independently, following an operational guide, and, above all, understanding how the Lora Meshtastic network works.<br>br>
+In the folder, we also find the daemon service and how to manage the log rotate. I intentionally didn't provide a step-by-step guide; I believe installing and configuring these systems requires a certain level of familiarity with the environment to operate independently, following an operational guide, and, above all, understanding how the Lora Meshtastic network works.<br><br>
 Let's summarize:<br>
 
 - mqtt2sqlite_msg.py (always in the background) receives messages in transit on MQTT and records them in the database
