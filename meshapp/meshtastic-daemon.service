@@ -1,0 +1,21 @@
+[Unit]
+Description=Meshtastic MQTT-WebSocket Daemon
+After=network.target
+
+[Service]
+Type=simple
+# Esegui come root
+User=root
+# Cartella del demone
+WorkingDirectory=/opt/meshtastic
+# Comando di avvio
+ExecStart=/usr/bin/python3 /opt/meshtastic/db_websocket_daemon.py
+# Riavvio automatico
+Restart=always
+RestartSec=30
+# Log stdout e stderr su file
+StandardOutput=append:/opt/meshtastic/daemon.log
+StandardError=append:/opt/meshtastic/daemon.log
+
+[Install]
+WantedBy=multi-user.target

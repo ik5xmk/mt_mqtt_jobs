@@ -1,0 +1,18 @@
+la creazione del log è dentro il servizio:
+# Log stdout e stderr su file
+StandardOutput=append:/opt/meshtastic/daemon.log
+StandardError=append:/opt/meshtastic/daemon.log
+
+quindi creare questo file (meshtastic-daemon)
+in /etc/logrotate.d/meshtastic-daemon
+
+e inserire:
+
+/opt/meshtastic/daemon.log {
+    daily
+    rotate 7
+    compress
+    missingok
+    notifempty
+    copytruncate
+}
