@@ -28,6 +28,6 @@ In the folder, we also find the daemon service and how to manage the log rotate.
 Let's summarize:<br>
 
 - mqtt2sqlite_msg.py (always in the background) receives messages in transit on MQTT and records them in the database
-- db_websocket_daemon (always in the background) reads messages (and node information) from the database and makes them available on a web socket
+- db_websocket_daemon.py (always in the background) reads messages (and node information) from the database and makes them available on a web socket
 - ​​meshapp.php is the "human-side" client for reading and writing messages
 - message2mqtt.py is the program (on demand) that "packages" the message (and node information) and sends it to MQTT for interpretation by the Lora cards
