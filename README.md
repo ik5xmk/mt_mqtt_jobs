@@ -32,4 +32,5 @@ Let's summarize:<br>
 - ​​meshapp.php is the "human-side" client for reading and writing messages
 - message2mqtt.py is the program (on demand) that "packages" the message (and node information) and sends it to MQTT for interpretation by the Lora cards
 <br><br>
-It's fun, a hobby, a programming exercise with no guarantees, so don't ask for support; what you do is your own responsibility. I hope it serves as an example for other applications and inspires other experimenters. If you'd like to thank me for my time, my email is ik5xmk@gmail.com
+It's fun, a hobby, a programming exercise with no guarantees, so don't ask for support; what you do is your own responsibility. I hope it serves as an example for other applications and inspires other experimenters. If you'd like to thank me for my time, my email is ik5xmk@gmail.com<br>
+<a href="https://t.me/Reti_LoRaAPRS_Meshcom_Meshtastic">My telegram group</a>
