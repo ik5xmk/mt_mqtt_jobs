@@ -31,3 +31,5 @@ Let's summarize:<br>
 - db_websocket_daemon.py (always in the background) reads messages (and node information) from the database and makes them available on a web socket
 - ​​meshapp.php is the "human-side" client for reading and writing messages
 - message2mqtt.py is the program (on demand) that "packages" the message (and node information) and sends it to MQTT for interpretation by the Lora cards
+<br><br>
+It's fun, a hobby, a programming exercise with no guarantees, so don't ask for support; what you do is your own responsibility. I hope it serves as an example for other applications and inspires other experimenters. If you'd like to thank me for my time, my email is ik5xmk@gmail.com
